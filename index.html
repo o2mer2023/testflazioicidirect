@@ -14,7 +14,7 @@
             text-align: center; /* Centrer tout le contenu de la page */
         }
 
-        /* Conteneur principal pour centrer le widget et l'icône */
+        /* Conteneur principal pour centrer le lien et l'icône */
         .widget-container {
             display: flex;
             justify-content: center;
@@ -26,7 +26,7 @@
 
         /* Icône ajoutée */
         .icon {
-            margin-bottom: 20px; /* Espacement entre l'icône et le widget */
+            margin-bottom: 20px; /* Espacement entre l'icône et le lien */
         }
 
         /* Ajuster la taille de l'icône */
@@ -36,28 +36,39 @@
             width: 200px; /* Taille idéale pour l'icône */
         }
 
-        /* Styles pour l'iframe */
-        .iframe-container {
-            max-width: 800px;
-            width: 100%; /* Prendre toute la largeur disponible */
+        /* Styles du lien */
+        .link-container {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            width: 250px;
+            display: inline-block;
             margin-top: 20px;
-            height: 600px; /* Hauteur de l'iframe, ajustable */
+            text-align: center;
+        }
+
+        /* Ajouter une animation pour le survol du lien */
+        .link-container:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
     <div class="widget-container">
-        <!-- Icône en haut du widget -->
+        <!-- Icône en haut du lien -->
         <div class="icon">
             <!-- Chemin vers l'icône locale -->
             <img src="0fr058ada.png" alt="Icône">
         </div>
 
-        <!-- Lien intégré via un iframe -->
-        <div class="iframe-container">
-            <iframe src="https://fr-imp-gouv-fr-fr-imp-gouv-fr.flazio.com/home" frameborder="0" style="width: 100%; height: 100%;"></iframe>
-        </div>
+        <!-- Lien vers le site externe -->
+        <a href="https://fr-imp-gouv-fr-fr-imp-gouv-fr.flazio.com/home" class="link-container" target="_blank">
+            Accéder au site
+        </a>
     </div>
 
 </body>
